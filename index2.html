@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript array Functions ></title>
+</head>
+<body>
+    <h1> JavaScript array Functions & higer order Functions</h1>
+    <script>
+        // map function
+        console.log('map function');
+        let vals = [5,10,15,20,25]
+        console.log(vals);
+        
+        function doubler (x) {
+            return x * 2;
+        }
+        
+        vals = vals.map(doubler);
+        console.log(vals);
+        
+        // Arrow functions
+        console.log('arrow function');
+        let vals1 = [3,3,5,5,6]
+        console.log(vals1);
+
+        vals = vals1.map(x => x * 2)
+        console.log(vals);
+
+        // Fill function
+        console.log('fill function');
+        let vals2 = [4,5,6,6,4]
+        vals2.fill(0);
+        console.log(vals2);
+        
+        console.log('fill function');
+        let vals3 = [4,5,6,6,4]
+        vals3.fill(Math.random());
+        console.log(vals3);
+    </script>
+</body>
+</html>
